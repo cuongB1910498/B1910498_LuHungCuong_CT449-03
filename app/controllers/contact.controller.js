@@ -25,3 +25,7 @@ exports.deleteAll = (req, res) => {
 exports.findAllFavorite = (req, res) => {
     res.send({ message : "findAllFavorite handler"});
 };
+
+exports.unFavorite = (req, res) =>{
+    res.send({ message: "unFavorite handler"});
+};
