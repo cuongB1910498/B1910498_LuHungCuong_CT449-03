@@ -12,11 +12,14 @@ router.route("/favorite")
     .get(contacts.findAllFavorite)
 
 router.route("/unfavorite/:id")
-    .get(contacts.unFavorite);
+    .get(contacts.unFavorite)
 
 router.route("/:id")
     .get(contacts.findOne)
     .put(contacts.update)
     .delete(contacts.delete)
+
+router.route("/addFavorite/:id")
+    .get(contacts.AddFavorite);
 
 module.exports = router;
