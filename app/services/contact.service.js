@@ -13,7 +13,7 @@ class ContactService {
             phone: payload.phone,
             favorite: payload.favorite,
         };
-        // Remove undefined fields
+        
         Object.keys(contact).forEach(
             (key) => contact[key] === undefined && delete contact[key]
         );
